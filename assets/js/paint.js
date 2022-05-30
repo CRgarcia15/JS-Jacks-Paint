@@ -9,15 +9,15 @@ function configureListeners() {
 }
 
 function addOpacity(event) {
-    if (!this.classList.contains('dim')) {
-        this.classList.remove('dim')
+    if (!this.classList.contains("dim")) {
+        this.classList.add("dim")
     }
     getProductInfo(event.target.id);     
 }
 
 function removeOpacity(event) {
-     if(this.classList.contains('dim')) {
-         this.classList.remove('dim')
+     if(this.classList.contains("dim")) {
+         this.classList.remove("dim")
      }
 
     let element = document.getElementById('color-price');
